@@ -45,3 +45,29 @@ body {
   background-color: rgb(147, 197, 255);
   transition: transform 250ms;
 }
+
+/* Translated cards */
+.cards {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+.card-contents {
+  position: relative;
+  display: block;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 250ms, background-color 500ms;
+}
+
+.card-item:hover .card-contents {
+  display: grid;
+  place-content: center;
+  color: white;
+  background-color: red;
+  border: 1px solid black;
+  transform: translateY(-100px);
+}
