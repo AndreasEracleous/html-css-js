@@ -13,12 +13,35 @@ body {
   color: white;
   border-radius: 50%;
   background-color: rgb(147, 197, 255);
+  padding: 0;
+  border: none;
 }
 
-.btn-animate {
+.btn-primary:hover {
+  transform: translateY(-10px);
+}
+
+.btn-secondary {
   transition: transform 250ms;
 }
 
-.btn:hover {
+.btn-secondary:hover {
   transform: translateY(-10px);
+}
+
+.btn-success {
+  background: transparent;
+}
+
+.btn-success:hover .btn-contents {
+  transform: translateY(-10px);
+}
+
+.btn-contents {
+  display: grid;
+  place-content: center;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(147, 197, 255);
+  transition: transform 250ms;
 }
