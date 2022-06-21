@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 32px 0;
+}
+
+.box {
+  display: grid;
+  place-content: center;
+  width: 200px;
+  height: 200px;
+  background: blueviolet;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  animation: slider-in 1000ms;
+}
+
+@keyframes slider-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
